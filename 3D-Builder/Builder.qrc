@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="/Builder"/>
+    <qresource prefix="/qss"/>
+</RCC>

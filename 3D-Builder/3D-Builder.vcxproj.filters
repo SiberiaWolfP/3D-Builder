@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Builder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyOpenGLWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FuncTabWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFloor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PickingTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="default.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyArrow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{14e44515-22e5-4eb2-b9dd-ce5fb3276ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hpp">
+      <UniqueIdentifier>{7dc6a0f5-02b7-4653-b79d-95d35965350e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Builder.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MyOpenGLWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="FuncTabWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SkyBox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MyFloor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ModelBase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MyArrow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Builder.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Builder.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="3D-Builder.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="default.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PickingTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hpp\material.hpp">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="hpp\model.hpp">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="hpp\vec3.hpp">
+      <Filter>hpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TabWidgetStyle.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\TitleButtonStyle.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\FuncTabWidget.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\light_shader.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\model_loading.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\model_loading.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\shader.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\shader.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\stencil_testing.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\stencil_single_color.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\stencil_testing.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\stencil_single_color.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\skybox.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\skybox.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\floor.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\floor.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\pick.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\pick.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\model_loading.geom">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\points.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\points.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\pick.gs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\arrow.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\arrow.gs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\arrow.vs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

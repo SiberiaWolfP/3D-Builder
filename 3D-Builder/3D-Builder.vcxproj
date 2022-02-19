@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>QtVS_v301</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>J:\for_linux_file\work\3D-Builder\include;J:\QT5.12.2\5.12.2\msvc2017\include;$(IncludePath)</IncludePath>
+    <LibraryPath>J:\QT5.12.2\5.12.2\msvc2017\lib;J:\for_linux_file\work\3D-Builder\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>J:\for_linux_file\work\3D-Builder\include;J:\QT5.12.2\5.12.2\msvc2017\include;$(IncludePath)</IncludePath>
+    <LibraryPath>J:\QT5.12.2\5.12.2\msvc2017\lib;J:\for_linux_file\work\3D-Builder\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <QtInstall>QT5.12.2MSVC</QtInstall>
+    <QtModules>3dcore 3danimation 3dextras 3dinput 3dlogic 3drender;core;gui;opengl;openglextensions;widgets</QtModules>
+    <QtHeaderSearchPath>$(QtHeaderSearchPath)</QtHeaderSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QtInstall>QT5.12.2MSVC</QtInstall>
+    <QtModules>3dcore 3danimation 3dextras 3dinput 3dlogic 3drender;core;gui;opengl;openglextensions;widgets</QtModules>
+    <QtHeaderSearchPath>$(QtHeaderSearchPath)</QtHeaderSearchPath>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>26444;26451;26498;26495;26439</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc142-mt.lib;$(Qt_LIBS_);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DisableSpecificWarnings>26444;26451;26498;26495;26439</DisableSpecificWarnings>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc142-mt.lib;$(Qt_LIBS_);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Builder.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="default.cpp" />
+    <ClCompile Include="FuncTabWidget.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ModelBase.cpp" />
+    <ClCompile Include="MyArrow.cpp" />
+    <ClCompile Include="MyFloor.cpp" />
+    <ClCompile Include="MyOpenGLWidget.cpp" />
+    <ClCompile Include="MyPoint.cpp" />
+    <ClCompile Include="PickingTexture.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="TitleBar.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Builder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Builder.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Builder.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="3D-Builder.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MyOpenGLWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Camera.h" />
+    <ClInclude Include="Camera_p.h" />
+    <ClInclude Include="default.h" />
+    <QtMoc Include="FuncTabWidget.h" />
+    <ClInclude Include="FileReader.h" />
+    <ClInclude Include="hpp\material.hpp" />
+    <ClInclude Include="hpp\model.hpp" />
+    <ClInclude Include="hpp\vec3.hpp" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Model.h" />
+    <QtMoc Include="SkyBox.h" />
+    <QtMoc Include="MyFloor.h" />
+    <QtMoc Include="ModelBase.h" />
+    <QtMoc Include="MyArrow.h" />
+    <ClInclude Include="MyPoint.h" />
+    <ClInclude Include="PickingTexture.h" />
+    <ClInclude Include="TitleBar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="Resources\FuncTabWidget.qss" />
+    <None Include="Resources\TabWidgetStyle.qss" />
+    <None Include="Resources\TitleButtonStyle.qss" />
+    <None Include="shaders\arrow.fs" />
+    <None Include="shaders\arrow.gs" />
+    <None Include="shaders\arrow.vs" />
+    <None Include="shaders\floor.fs" />
+    <None Include="shaders\floor.vs" />
+    <None Include="shaders\light_shader.frag" />
+    <None Include="shaders\model_loading.frag" />
+    <None Include="shaders\model_loading.geom" />
+    <None Include="shaders\model_loading.vert" />
+    <None Include="shaders\pick.fs" />
+    <None Include="shaders\pick.gs" />
+    <None Include="shaders\pick.vs" />
+    <None Include="shaders\points.frag" />
+    <None Include="shaders\points.vert" />
+    <None Include="shaders\shader.frag" />
+    <None Include="shaders\shader.vert" />
+    <None Include="shaders\skybox.fs" />
+    <None Include="shaders\skybox.vs" />
+    <None Include="shaders\stencil_single_color.fs" />
+    <None Include="shaders\stencil_single_color.vs" />
+    <None Include="shaders\stencil_testing.fs" />
+    <None Include="shaders\stencil_testing.vs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

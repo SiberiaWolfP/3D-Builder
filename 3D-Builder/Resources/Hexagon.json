@@ -1,0 +1,49 @@
+{
+    "nx": 1920,
+    "ny": 1080,
+    "ns": 60,
+    "camera": {
+        "lookfrom": [
+            1,
+            2,
+            3
+        ],
+        "lookat": [
+            1,
+            2,
+            3
+        ],
+        "vup": [
+            1,
+            2,
+            3
+        ],
+        "vfov": 1.33,
+        "aspect": 1.33,
+        "aperture": 1.33,
+        "focus_dist": 1.33
+    },
+    "objfile": [
+        {
+            "dir": "Resources/hexagon.obj",
+            "material": 1
+        }
+    ],
+    "materials": [
+        {
+            "id": 0,
+            "type": "metal",
+            "RGB": [
+                255,
+                255,
+                255
+            ],
+            "albedo": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fuzz": 1.0
+        }
+    ]
+}

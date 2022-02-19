@@ -1,0 +1,29 @@
+QPushButton {
+    margin: 0;
+    border: 0;
+    background-color: rgb(224,224,224);
+}
+
+QPushButton:hover {
+    background-color: rgb(202,202,202);
+}
+
+    QPushButton:hover:checked {
+        background-color: rgb(146,154,158);
+    }
+
+QPushButton:pressed {
+    background-color: rgb(179,179,179);
+}
+
+    QPushButton:pressed:checked {
+        background-color: rgb(130,137,140);
+    }
+    QPushButton:checked {
+        background-color: rgb(161,170,174);
+    }
+
+    QPushButton:unchecked {
+        background-color: rgb(224,224,224);
+    }
+

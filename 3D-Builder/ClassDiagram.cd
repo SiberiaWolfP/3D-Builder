@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CameraPrivate" Collapsed="true">
+    <Position X="9.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAgAEAACACIAgBAAAIAASBAAAgjACCAABgAACAgEI=</HashCode>
+      <FileName>Camera_p.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileReader" Collapsed="true">
+    <Position X="8.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAApAABgAEAACIAAEAIgABgiAAIAAkAlgjACAAAAAJg=</HashCode>
+      <FileName>FileReader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Model">
+    <Position X="7.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>CBAAQACACECQAigAAACCQAAAAEAQAAKQAAgQAAAJAgI=</HashCode>
+      <FileName>Model.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyPoint" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAgAAAgAAAAAAAAAAAAAQAAAAAAAAQAA=</HashCode>
+      <FileName>MyPoint.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PickingTexture" Collapsed="true">
+    <Position X="0.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAABAAIAAKAAAQAAQ=</HashCode>
+      <FileName>PickingTexture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TitleBar" Collapsed="true">
+    <Position X="7.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ERkAIAAEACjAQAACAAAABADAAACQIAAACAgACAAAAAI=</HashCode>
+      <FileName>TitleBar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Builder">
+    <Position X="5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQABAAAEAAAAFAAAAUgAAKCAAAAAAAAAAAAAAAIACAA=</HashCode>
+      <FileName>Builder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyOpenGLWidget" Collapsed="true">
+    <Position X="6.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AALEAIKAQAHMCIoCBTkMIghAAAAUowTEAgDAAIAJAAE=</HashCode>
+      <FileName>MyOpenGLWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camera" Collapsed="true">
+    <Position X="9" Y="10" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Camera::ProjectionType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Camera.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Camera::CameraTranslationOption" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Camera.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AkAASAACACQCQAAAAhAyIhEgAAAAEEQIAgMAAgRABKA=</HashCode>
+      <FileName>Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuncTabWidget" Collapsed="true">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FuncTabWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkyBox" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAgAAAAAAAUAAAAAAAAAAA=</HashCode>
+      <FileName>SkyBox.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyFloor" Collapsed="true">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAQAAAAAQAAAAAAEACAA=</HashCode>
+      <FileName>MyFloor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ModelBase">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAQAAAhAAAAAAAAAQAAAAQIAQAAggAAAAAAA=</HashCode>
+      <FileName>ModelBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyArrow">
+    <Position X="5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAEAAgAAgCAgAABAAUCAwAAwAAAICAABAEA=</HashCode>
+      <FileName>MyArrow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Material" Collapsed="true">
+    <Position X="6.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAEAAAAACAAAAQAAAQAAAQAGEAAAAAAAgBAIAAA=</HashCode>
+      <FileName>hpp\material.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ivy_Model" Collapsed="true">
+    <Position X="3" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQQAECADACABAIAICAADABAAKQAAIEACAAQAABAAI=</HashCode>
+      <FileName>hpp\model.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Vertex" Collapsed="true">
+    <Position X="10.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAgAAIAAAAAAAAIAAACAAAAgAAAAAA=</HashCode>
+      <FileName>Model.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Texture" Collapsed="true">
+    <Position X="5.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAABAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Ivy233::camera" Collapsed="true">
+    <Position X="0.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAiABAAAAAAAAAAAABAAAAAAAAABAAQAAQAA=</HashCode>
+      <FileName>hpp\vec3.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="hash_t" Collapsed="true">
+    <Position X="7.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyOpenGLWidget.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="ModelMoveState" Collapsed="true">
+    <Position X="3" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAEAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>MyArrow.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="material_t" Collapsed="true">
+    <Position X="3" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAACAAAAAAAAAAAEAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>hpp\material.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

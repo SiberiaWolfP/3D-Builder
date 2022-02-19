@@ -1,0 +1,55 @@
+﻿/* Style the tab using the tab sub-control. Note that
+      it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+    margin: 0;
+    background-color: rgb(75,149,205);
+    border: 0;
+    font-family: "Microsoft YaHei UI";
+}
+
+QTabBar::tab:hover {
+    background-color: rgb(68,134,185);
+}
+
+QTabBar::tab:selected {
+    border: 0;
+    background-color: rgb(224,224,224);
+}
+
+QTabBar::tab:!selected {
+    margin-top: 0px; /* 使各tab一样高 */
+}
+
+QTabWidget::pane {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: rgb(224,224,224);
+}
+
+
+QPushButton {
+    border: 0;
+    margin: 0;
+    background-color: rgb(75,149,205);
+}
+
+QPushButton:hover {
+    background-color: rgb(68,134,185);
+}
+
+QPushButton:pressed {
+    background-color: rgb(60,119,164);
+}
+
+QSlider::groove {
+    height: 6px;
+    background-color: rgb(0, 0, 0);
+}
+
+QSlider::handle {
+    width: 10px;
+    background: rgb(0, 160, 230);
+    margin: -6px 0px -6px 0px;
+    border-radius: 9px;
+}
